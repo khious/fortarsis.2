@@ -1,0 +1,189 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset=utf-8>
+<title> Fortarsis | Commissions </title>
+    <meta name="viewpoint" content="width-device-with, initial-scale=1.0">
+<link href="fortarsis.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper"> 
+	<header> <h1>  </h1></header>
+	<nav> 
+        <ul>
+            
+        <li>
+		<a href="index.html"> About </a> </li> 
+            
+        <li>   
+		<a href="shop.html"> Shop </a></li> 
+            
+        <li>
+        <a href="commissions.html"> Commissions  </a> </li>
+        
+        <li>
+		<a href="q+a.html"> Questions &amp; Answers </a> </li> 
+         
+        <li>
+        <a href="contact.html"> Contact </a> </li>
+             
+        </ul>
+	</nav>
+        
+<div id="commissionshero"> </div> 
+
+<main>
+      <h2> Commission Art </h2>
+     <p>While some of our art pieces from our <a href="shop.html"> shop </a> might have intrigued you and captivated you, it may not have all the creative elements you desire. Ever looked at a painting, absolutely loved it but wished it had something else? Well, you've come to the right place  </p> 
+    
+    <p>If you are in search for a work that truly represents your passion, taste, and style, the best way to obtain one is to commission us to create a custom piece for you!</p>
+    
+    <p> Feel free to take a look at some previous commissions down below.</p>
+    
+    <h5>Click on the images below </h5>
+
+        <div class="row2">
+          <div class="column2">
+            <img src="images/Untitled-1.jpg" alt="Reference Sheets" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+          <div class="column2">
+            <img src="images/Untitled-4.jpg" alt="Character Design" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+          <div class="column2">
+            <img src="images/Graffitti_name.jpg" alt="Custom Graffity" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+          <div class="column2">
+            <img src="images/kneelingWoman.jpg" alt="Paintings" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+          <div class="column2">
+            <img src="images/Minato.jpg" alt="Fan Arts" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+          <div class="column2">
+            <img src="images/logos.png" alt="Logos" style="width:100%" onclick="myFunction(this);">
+          </div>
+            
+        </div>
+
+        <div class="container2">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:80%">
+          <div id="imgtext"></div>
+        </div>
+
+        <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+    
+  
+
+
+    <h2> Overview </h2>
+    <p>When doing commissions, it is important to set a few rules in order to allow the artist to create the desired piece of art.
+        For instance, traditional art takes longer to complete and it is much more delicate as oppossed to digital art, where there is more freedom.
+    </p>
+    
+    <p>*Read the following before commissioning</p>
+    
+    <ul>    <li> All commissions are done under contract </li>
+            <li> Visual References  </li>
+            <li> Prices vary depending on size, medium, and movement (ex. Portrait> painting> abstract)</li>
+            <li> Time for completion will also depend on what was previously stated </li>
+            <li> Must be able to pay 50% upfront (Finalize purchase upon completion) </li>
+            <li> Once sketch/concept/draft is approved, there won't be any changes</li>
+            <li> Sales are final </li>
+            <li> No Refunds </li>
+    </ul>
+    
+    
+    
+    <h2> Creative Vision </h2>
+    <p> The first step in the commissioning process is to determine the following elements that compromise your creative concept:</p>
+ 
+    <form action="/action_page.php">
+        
+      <label for="subject"> Subject </label>
+        <select id="subject" name="subject" required>
+          <option value="Portraits">Portraits</option>
+          <option value="Still life">Still Life</option>
+          <option value="Animals">Animals</option>
+          <option value="Other">Other</option>
+      </select>
+
+      <label for="medium"> Medium </label>
+        <select id="medium" name="medium" required>
+          <option value="Painting">Paintings</option>
+          <option value="Digital Art ">Digital Art</option>
+          <option value="Ink"> Ink </option>
+          <option value="Other">Other</option>
+        </select>
+    
+      <label for="movement"> Movement </label>
+        <select id="movement" name="movement" required>
+          <option value="abstract">Abstract</option>
+          <option value="modern">Modern</option>
+          <option value="contemporary">contemporary</option>
+          <option value="Other">Other</option>
+        </select>
+    
+    <label for="dimensions"> Dimensions </label>
+        <select id="dimensions" name="dimensions" required>
+        <option value="3.5 x 5 In">3.5 x 5 inches</option>
+        <option value="5 x 7 In">5 x 7 inches</option>
+        <option value="8 x 10 In">8 x 10 inches</option>
+        <option value="11 x 14 In">11 x 14 inches</option>
+        <option value="16 x 20 In"> 16 x 20 inches</option>
+        <option value="Other">Other</option>
+        </select>
+    
+    <p>If none of the above seem to fit your art piece, include the following: </p> 
+        <ul>    
+            <li> Detailed Description </li>
+            <li> Visual References  </li>
+            <li> Subject matter</li>
+            <li> Medium </li>
+            <li> Modern, contemporary, realistic, surrealism, etc. </li>
+            <li> Colors or palette</li>
+            <li> For Fan Arts, name the series and the character </li>  
+        </ul>
+        
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your full name.." required>
+          
+        <label for="myEMail"> E-Mail: </label> 
+        <input type="email" name="myEMail" id="myEMail" placeholder="e-mail" required>
+        
+        <label for="subject"> Description</label>
+        <textarea id="subject" name="subject" placeholder="Description of your idea.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+        
+    </form>
+      
+  <h4> For more information don't forget to check our <a href="q+a.html"> quesions &amp; answers </a> tab or  <a href="contact.html"> contact </a>  us. for further assistance </h4>
+
+</main>
+
+
+<footer> 
+	<br><br>
+	Copyright &copy; 2019 Fortarsis
+	<br>
+	Contact the <a href="mailto:kperezca@montgomerycollege.edu"> webmaster</a>
+</footer>
+</div>
+</body>
+
+</html>
